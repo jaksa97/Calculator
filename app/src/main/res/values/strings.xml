@@ -1,3 +1,44 @@
 <resources>
     <string name="app_name">Calculator</string>
+
+    <string name="displyHint">Enter a value</string>
+
+    <string name="btnOneText">1</string>
+    <string name="btnTwoText">2</string>
+    <string name="btnThreeText">3</string>
+    <string name="btnFourText">4</string>
+    <string name="btnFiveText">5</string>
+    <string name="btnSixText">6</string>
+    <string name="btnSevenText">7</string>
+    <string name="btnEightText">8</string>
+    <string name="btnNineText">9</string>
+    <string name="btnZeroText">0</string>
+
+    <string name="btnClearText">C</string>
+    <string name="btnParenthesesOpenText">(</string>
+    <string name="btnParenthesesCloseText">)</string>
+    <string name="btnDivideText">÷</string>
+    <string name="btnMultiplyText">×</string>
+    <string name="btnAddText">+</string>
+    <string name="btnSubtractText">-</string>
+    <string name="btnDecimalText">.</string>
+    <string name="btnEqualsText">=</string>
+
+    <string name="btnSinText">sin</string>
+    <string name="btnCosText">cos</string>
+    <string name="btnTanText">tan</string>
+    <string name="btnArcSinText">sin<sup><small>-1</small></sup></string>
+    <string name="btnArcCosText">cos<sup><small>-1</small></sup></string>
+    <string name="btnArcTanText">tan<sup><small>-1</small></sup></string>
+    <string name="btnNaturalLogText">ln</string>
+    <string name="btnLogText">log</string>
+    <string name="btnSquareRootText">√</string>
+    <string name="btnAbsoluteValueText">|x|</string>
+    <string name="btnPiText">π</string>
+    <string name="btnEText">e</string>
+    <string name="btnXSquaredText">x<sup><small>2</small></sup></string>
+    <string name="btnXPowerYText">x<sup><small>y</small></sup></string>
+    <string name="btnIsPrimeFunctionText">prime</string>
+
+    <string name="btnBackspace"> </string>
 </resources>
