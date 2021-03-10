@@ -9,9 +9,9 @@
     <color name="white">#FFFFFFFF</color>
 
     <!-- Colors for the background -->
-    <color name="blackStart">#060607</color>
-    <color name="blueBlack">#111F28</color>
-    <color name="greyEnd">#484E52</color>
+    <color name="start">#060607</color>
+    <color name="middle">#111F28</color>
+    <color name="end">#484E52</color>
 
     <!-- Colors to add a little pop to the buttons -->
     <color name="border">#E3CDB3</color>

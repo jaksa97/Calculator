@@ -2,15 +2,31 @@ package veljkojaksic.calculator;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
+
+    private TextView previousCalculation;
+    private EditText display;
+
+    public MainActivity() {
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        previousCalculation = findViewById(R.id.previousCalculationView);
+        display = findViewById(R.id.displayEditText);
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            display.setShowSoftInputOnFocus(false);
+        }
     }
 
     public void btnClearClick(View view) {
