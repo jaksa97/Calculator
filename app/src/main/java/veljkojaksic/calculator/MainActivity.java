@@ -114,48 +114,63 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void btnSinClick(View view) {
+        updateText("sin(");
     }
 
     public void btnCosClick(View view) {
+        updateText("cos(");
     }
 
     public void btnTanClick(View view) {
+        updateText("tan(");
     }
 
     public void btnArcSinClick(View view) {
+        updateText("arcsin(");
     }
 
     public void btnArcCosClick(View view) {
+        updateText("arccos(");
     }
 
     public void btnArcTanClick(View view) {
+        updateText("arctan(");
     }
 
     public void btnLogClick(View view) {
+        updateText("log(");
     }
 
     public void btnLnClick(View view) {
+        updateText("ln(");
     }
 
     public void btnSqrtClick(View view) {
+        updateText("sqrt(");
     }
 
     public void btnEClick(View view) {
+        updateText("e");
     }
 
     public void brnPiClick(View view) {
+        updateText("pi");
     }
 
     public void btnAbsoluteValueClick(View view) {
+        updateText("abs(");
     }
 
-    public void btnIClick(View view) {
+    public void btnFactorialClick(View view) {
+        updateText("!");
     }
 
     public void btnSquareClick(View view) {
+        updateText("^(2)");
     }
 
     public void btnPowerClick(View view) {
+        updateText("^(");
     }
 
 }

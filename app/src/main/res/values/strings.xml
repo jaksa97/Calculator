@@ -38,7 +38,7 @@
     <string name="btnAbsoluteValueText">|x|</string>
     <string name="btnPiText">π</string>
     <string name="btnEText">e</string>
-    <string name="btnIText">i</string>
+    <string name="btnFactorialText">x!</string>
     <string name="btnSquareText">x<sup><small>2</small></sup></string>
     <string name="btnPowerText">x<sup><small>y</small></sup></string>
 </resources>
