@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void updateText(String strToAdd){
         display.setText(String.format("%s%s", display.getText().toString(), strToAdd));
-        display.setSelection(display.getSelectionStart() + 1);
+        display.setSelection(display.getSelectionStart() + display.getText().length());
     }
 
     public void btnClearClick(View view) {
@@ -112,4 +112,50 @@ public class MainActivity extends AppCompatActivity {
 
     public void btnBackspaceClick(View view) {
     }
+
+    public void btnSinClick(View view) {
+    }
+
+    public void btnCosClick(View view) {
+    }
+
+    public void btnTanClick(View view) {
+    }
+
+    public void btnArcSinClick(View view) {
+    }
+
+    public void btnArcCosClick(View view) {
+    }
+
+    public void btnArcTanClick(View view) {
+    }
+
+    public void btnLogClick(View view) {
+    }
+
+    public void btnLnClick(View view) {
+    }
+
+    public void btnSqrtClick(View view) {
+    }
+
+    public void btnEClick(View view) {
+    }
+
+    public void brnPiClick(View view) {
+    }
+
+    public void btnAbsoluteValueClick(View view) {
+    }
+
+    public void btnIClick(View view) {
+    }
+
+    public void btnSquareClick(View view) {
+    }
+
+    public void btnPowerClick(View view) {
+    }
+
 }

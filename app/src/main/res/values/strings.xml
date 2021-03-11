@@ -25,4 +25,20 @@
     <string name="btnEqualsText">=</string>
 
     <string name="btnBackspace"> </string>
+
+    <string name="btnSinText">sin</string>
+    <string name="btnCosText">cos</string>
+    <string name="btnTanText">tan</string>
+    <string name="btnArcSinText">sin<sup><small>-1</small></sup></string>
+    <string name="btnArcCosText">cos<sup><small>-1</small></sup></string>
+    <string name="btnArcTanText">tan<sup><small>-1</small></sup></string>
+    <string name="btnLnText">ln</string>
+    <string name="btnLogText">log</string>
+    <string name="btnSqrtText">√</string>
+    <string name="btnAbsoluteValueText">|x|</string>
+    <string name="btnPiText">π</string>
+    <string name="btnEText">e</string>
+    <string name="btnIText">i</string>
+    <string name="btnSquareText">x<sup><small>2</small></sup></string>
+    <string name="btnPowerText">x<sup><small>y</small></sup></string>
 </resources>
