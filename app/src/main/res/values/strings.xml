@@ -1,7 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Calculator</string>
 
-    <string name="displyHint">Enter a value</string>
+    <string name="displyHint">Enter a equation</string>
 
     <string name="btnOneText">1</string>
     <string name="btnTwoText">2</string>

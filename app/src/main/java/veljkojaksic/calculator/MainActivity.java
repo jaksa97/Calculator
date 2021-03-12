@@ -7,6 +7,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import org.mariuszgromada.math.mxparser.Expression;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -29,148 +32,183 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    private void updateText(String strToAdd){
+    private void updateDisplay(String strToAdd){
         display.setText(String.format("%s%s", display.getText().toString(), strToAdd));
         display.setSelection(display.getSelectionStart() + display.getText().length());
     }
 
     public void btnClearClick(View view) {
-        display.setText("");
-        previousCalculation.setText("");
+        if (display.getText().toString().length() != 0) {
+            display.setText("");
+            previousCalculation.setText("");
+        }
+        else
+        {
+            Toast.makeText(this,"You don't have any equation to delete", Toast.LENGTH_LONG).show();
+        }
     }
 
     public void btnParenthesesOpenClick(View view) {
-        updateText(getResources().getString(R.string.btnParenthesesOpenText));
+        updateDisplay(getResources().getString(R.string.btnParenthesesOpenText));
     }
 
     public void btnParenthesesCloseClick(View view) {
-        updateText(getResources().getString(R.string.btnParenthesesCloseText));
+        updateDisplay(getResources().getString(R.string.btnParenthesesCloseText));
     }
 
     public void btnDivideClick(View view) {
-        updateText(getResources().getString(R.string.btnDivideText));
+        updateDisplay(getResources().getString(R.string.btnDivideText));
     }
 
     public void btnSevenClick(View view) {
-        updateText(getResources().getString(R.string.btnSevenText));
+        updateDisplay(getResources().getString(R.string.btnSevenText));
     }
 
     public void btnEightClick(View view) {
-        updateText(getResources().getString(R.string.btnEightText));
+        updateDisplay(getResources().getString(R.string.btnEightText));
     }
 
     public void btnNineClick(View view) {
-        updateText(getResources().getString(R.string.btnNineText));
+        updateDisplay(getResources().getString(R.string.btnNineText));
     }
 
     public void btnMultiplyClick(View view) {
-        updateText(getResources().getString(R.string.btnMultiplyText));
+        updateDisplay(getResources().getString(R.string.btnMultiplyText));
     }
 
     public void btnFourClick(View view) {
-        updateText(getResources().getString(R.string.btnFourText));
+        updateDisplay(getResources().getString(R.string.btnFourText));
     }
 
     public void btnFiveClick(View view) {
-        updateText(getResources().getString(R.string.btnFiveText));
+        updateDisplay(getResources().getString(R.string.btnFiveText));
     }
 
     public void btnSixClick(View view) {
-        updateText(getResources().getString(R.string.btnSixText));
+        updateDisplay(getResources().getString(R.string.btnSixText));
     }
 
     public void btnSubtractClick(View view) {
-        updateText(getResources().getString(R.string.btnSubtractText));
+        updateDisplay(getResources().getString(R.string.btnSubtractText));
     }
 
     public void btnOneClick(View view) {
-        updateText(getResources().getString(R.string.btnOneText));
+        updateDisplay(getResources().getString(R.string.btnOneText));
     }
 
     public void btnTwoClick(View view) {
-        updateText(getResources().getString(R.string.btnTwoText));
+        updateDisplay(getResources().getString(R.string.btnTwoText));
     }
 
     public void btnThreeClick(View view) {
-        updateText(getResources().getString(R.string.btnThreeText));
+        updateDisplay(getResources().getString(R.string.btnThreeText));
     }
 
     public void btnAddClick(View view) {
-        updateText(getResources().getString(R.string.btnAddText));
+        updateDisplay(getResources().getString(R.string.btnAddText));
     }
 
     public void btnZeroClick(View view) {
-        updateText(getResources().getString(R.string.btnZeroText));
+        updateDisplay(getResources().getString(R.string.btnZeroText));
     }
 
     public void btnDecimalClick(View view) {
-        updateText(getResources().getString(R.string.btnDecimalText));
+        updateDisplay(getResources().getString(R.string.btnDecimalText));
     }
 
     public void btnEqualClick(View view) {
+        String userExpression = display.getText().toString();
+
+        if (userExpression.length() != 0) {
+            previousCalculation.setText(userExpression);
+
+            userExpression = userExpression.replaceAll(getResources().getString(R.string.btnDivideText), "/");
+            userExpression = userExpression.replaceAll(getResources().getString(R.string.btnMultiplyText), "*");
+
+            Expression expression = new Expression(userExpression);
+            String result = String.valueOf(expression.calculate());
+
+            display.setText(result);
+            display.setSelection(result.length());
+        }
+        else
+        {
+            Toast.makeText(this,"You don't have any equation to calculate", Toast.LENGTH_LONG).show();
+        }
     }
 
     public void btnBackspaceClick(View view) {
+        String oldDisplay = display.getText().toString();
+
+        if (oldDisplay.length()!=0) {
+            String newDisplay = oldDisplay.substring(0, oldDisplay.length()-1);
+            display.setText(newDisplay);
+            display.setSelection(newDisplay.length());
+        }
+        else
+        {
+            Toast.makeText(this,"You don't have any character to delete", Toast.LENGTH_LONG).show();
+        }
     }
 
     public void btnSinClick(View view) {
-        updateText("sin(");
+        updateDisplay("sin(");
     }
 
     public void btnCosClick(View view) {
-        updateText("cos(");
+        updateDisplay("cos(");
     }
 
     public void btnTanClick(View view) {
-        updateText("tan(");
+        updateDisplay("tan(");
     }
 
     public void btnArcSinClick(View view) {
-        updateText("arcsin(");
+        updateDisplay("arcsin(");
     }
 
     public void btnArcCosClick(View view) {
-        updateText("arccos(");
+        updateDisplay("arccos(");
     }
 
     public void btnArcTanClick(View view) {
-        updateText("arctan(");
+        updateDisplay("arctan(");
     }
 
     public void btnLogClick(View view) {
-        updateText("log(");
+        updateDisplay("log(");
     }
 
     public void btnLnClick(View view) {
-        updateText("ln(");
+        updateDisplay("ln(");
     }
 
     public void btnSqrtClick(View view) {
-        updateText("sqrt(");
+        updateDisplay("sqrt(");
     }
 
     public void btnEClick(View view) {
-        updateText("e");
+        updateDisplay("e");
     }
 
     public void brnPiClick(View view) {
-        updateText("pi");
+        updateDisplay("pi");
     }
 
     public void btnAbsoluteValueClick(View view) {
-        updateText("abs(");
+        updateDisplay("abs(");
     }
 
     public void btnFactorialClick(View view) {
-        updateText("!");
+        updateDisplay("!");
     }
 
     public void btnSquareClick(View view) {
-        updateText("^(2)");
+        updateDisplay("^(2)");
     }
 
     public void btnPowerClick(View view) {
-        updateText("^(");
+        updateDisplay("^(");
     }
 
 }
