@@ -1,5 +1,6 @@
 package veljkojaksic.calculator;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Activity;
@@ -20,6 +21,9 @@ public class MainActivity extends AppCompatActivity {
     private TextView previousCalculation;
     private EditText display;
 
+    public static final String KEY_Previous_Calculation = "Previous_Calculation";
+
+
     public MainActivity() {
     }
 
@@ -39,6 +43,24 @@ public class MainActivity extends AppCompatActivity {
 
         display.setEnabled(false);
 
+        if (savedInstanceState != null)
+        {
+            final String previousCalculationString = savedInstanceState.getString(KEY_Previous_Calculation);
+            if (previousCalculationString != null)
+            {
+                previousCalculation.setText(previousCalculationString);
+            }
+        }
+    }
+
+    @Override
+    protected void onSaveInstanceState(@NonNull Bundle outState)
+    {
+        if (previousCalculation!=null)
+        {
+            outState.putString(KEY_Previous_Calculation, previousCalculation.getText().toString());
+        }
+        super.onSaveInstanceState(outState);
     }
 
     private void updateDisplay(String strToAdd){

@@ -8,6 +8,6 @@
     <string name="btnArea">Површина</string>
     <string name="btnVolume">Запремина</string>
     <string name="btnTemperature">Температура</string>
-    <string name="btnTime">Бреме</string>
+    <string name="btnTime">Време</string>
     <string name="btnCurrency">Валуте</string>
 </resources>
