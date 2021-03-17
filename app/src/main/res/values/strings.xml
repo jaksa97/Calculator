@@ -2,44 +2,46 @@
 <resources>
     <string name="app_name">Calculator</string>
 
-    <string name="displyHint">Enter a equation</string>
+    <string name="displayHint">Enter the equation</string>
 
-    <string name="btnOneText">1</string>
-    <string name="btnTwoText">2</string>
-    <string name="btnThreeText">3</string>
-    <string name="btnFourText">4</string>
-    <string name="btnFiveText">5</string>
-    <string name="btnSixText">6</string>
-    <string name="btnSevenText">7</string>
-    <string name="btnEightText">8</string>
-    <string name="btnNineText">9</string>
-    <string name="btnZeroText">0</string>
+    <string name="btnOneText" translatable="false">1</string>
+    <string name="btnTwoText" translatable="false">2</string>
+    <string name="btnThreeText" translatable="false">3</string>
+    <string name="btnFourText" translatable="false">4</string>
+    <string name="btnFiveText" translatable="false">5</string>
+    <string name="btnSixText" translatable="false">6</string>
+    <string name="btnSevenText" translatable="false">7</string>
+    <string name="btnEightText" translatable="false">8</string>
+    <string name="btnNineText" translatable="false">9</string>
+    <string name="btnZeroText" translatable="false">0</string>
 
-    <string name="btnClearText">C</string>
-    <string name="btnParenthesesOpenText">(</string>
-    <string name="btnParenthesesCloseText">)</string>
-    <string name="btnDivideText">÷</string>
-    <string name="btnMultiplyText">×</string>
-    <string name="btnAddText">+</string>
-    <string name="btnSubtractText">-</string>
-    <string name="btnDecimalText">.</string>
-    <string name="btnEqualsText">=</string>
+    <string name="btnClearText" translatable="false">C</string>
+    <string name="btnParenthesesOpenText" translatable="false">(</string>
+    <string name="btnParenthesesCloseText" translatable="false">)</string>
+    <string name="btnDivideText" translatable="false">÷</string>
+    <string name="btnMultiplyText" translatable="false">×</string>
+    <string name="btnAddText" translatable="false">+</string>
+    <string name="btnSubtractText" translatable="false">-</string>
+    <string name="btnDecimalText" translatable="false">.</string>
+    <string name="btnEqualsText" translatable="false">=</string>
 
-    <string name="btnBackspace"> </string>
+    <string name="btnBackspace" translatable="false"> </string>
 
-    <string name="btnSinText">sin</string>
-    <string name="btnCosText">cos</string>
-    <string name="btnTanText">tan</string>
-    <string name="btnArcSinText">sin<sup><small>-1</small></sup></string>
-    <string name="btnArcCosText">cos<sup><small>-1</small></sup></string>
-    <string name="btnArcTanText">tan<sup><small>-1</small></sup></string>
-    <string name="btnLnText">ln</string>
-    <string name="btnLogText">log</string>
-    <string name="btnSqrtText">√</string>
-    <string name="btnAbsoluteValueText">|x|</string>
-    <string name="btnPiText">π</string>
-    <string name="btnEText">e</string>
-    <string name="btnFactorialText">x!</string>
-    <string name="btnSquareText">x<sup><small>2</small></sup></string>
-    <string name="btnPowerText">x<sup><small>y</small></sup></string>
+    <string name="btnSinText" translatable="false">sin</string>
+    <string name="btnCosText" translatable="false">cos</string>
+    <string name="btnTanText" translatable="false">tan</string>
+    <string name="btnArcSinText" translatable="false">sin<sup><small>-1</small></sup></string>
+    <string name="btnArcCosText" translatable="false">cos<sup><small>-1</small></sup></string>
+    <string name="btnArcTanText" translatable="false">tan<sup><small>-1</small></sup></string>
+    <string name="btnLnText" translatable="false">ln</string>
+    <string name="btnLogText" translatable="false">log</string>
+    <string name="btnSqrtText" translatable="false">√</string>
+    <string name="btnAbsoluteValueText" translatable="false">|x|</string>
+    <string name="btnPiText" translatable="false">π</string>
+    <string name="btnEText" translatable="false">e</string>
+    <string name="btnFactorialText" translatable="false">x!</string>
+    <string name="btnSquareText" translatable="false">x<sup><small>2</small></sup></string>
+    <string name="btnPowerText" translatable="false">x<sup><small>y</small></sup></string>
+
+    <string name="btnUnitConverterText" >Unit Converter</string>
 </resources>

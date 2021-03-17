@@ -7,16 +7,35 @@
     android:background="@drawable/app_background"
     tools:context=".MainActivity">
 
+    <Button
+        android:id="@+id/btnUnitConverter"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/button_background"
+        android:onClick="btnUnitConverterClick"
+        android:text="@string/btnUnitConverterText"
+        app:layout_constraintBottom_toTopOf="@+id/previousCalculationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/previousCalculationView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text=""
         android:textColor="@color/white"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/displayEditText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.743" />
+        app:layout_constraintVertical_bias="0.922" />
 
     <EditText
         android:id="@+id/displayEditText"
@@ -25,14 +44,14 @@
         android:layout_marginBottom="24dp"
         android:ems="10"
         android:gravity="end"
-        android:hint="@string/displyHint"
+        android:hint="@string/displayHint"
         android:importantForAutofill="no"
         android:inputType="textPersonName"
         android:paddingStart="10dp"
         android:paddingEnd="10dp"
         android:textColor="@color/white"
         android:textColorHint="@color/border"
-        android:textSize="48sp"
+        android:textSize="45sp"
         app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -325,4 +344,5 @@
             app:srcCompat="@drawable/button_backspace" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

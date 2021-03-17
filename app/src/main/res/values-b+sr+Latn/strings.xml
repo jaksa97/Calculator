@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Digitron</string>
+    <string name="displayHint">Unesite jednačinu</string>
+
+    <string name="btnUnitConverterText" >Pretvarač jedinica</string>
+</resources>

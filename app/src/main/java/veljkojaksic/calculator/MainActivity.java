@@ -2,6 +2,9 @@ package veljkojaksic.calculator;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
+import android.content.pm.ActivityInfo;
+import android.content.res.Configuration;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
@@ -22,6 +25,12 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        if (this.getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE)
+        {
+            getSupportActionBar().hide();
+        }
+
         setContentView(R.layout.activity_main);
 
         previousCalculation = findViewById(R.id.previousCalculationView);
@@ -38,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void btnClearClick(View view) {
-        if (display.getText().toString().length() != 0) {
+        if (display.getText().toString().length() != 0 || previousCalculation.getText().toString().length() != 0) {
             display.setText("");
             previousCalculation.setText("");
         }
@@ -211,4 +220,6 @@ public class MainActivity extends AppCompatActivity {
         updateDisplay("^(");
     }
 
+    public void btnUnitConverterClick(View view) {
+    }
 }

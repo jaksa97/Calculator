@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Дигитрон</string>
+    <string name="displayHint">Унесите једначину</string>
+
+    <string name="btnUnitConverterText" >Претварач јединица</string>
+</resources>
