@@ -3,6 +3,7 @@ package veljkojaksic.calculator;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.content.res.Configuration;
 import android.os.Build;
@@ -36,9 +37,8 @@ public class MainActivity extends AppCompatActivity {
         previousCalculation = findViewById(R.id.previousCalculationView);
         display = findViewById(R.id.displayEditText);
 
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            display.setShowSoftInputOnFocus(false);
-        }
+        display.setEnabled(false);
+
     }
 
     private void updateDisplay(String strToAdd){
@@ -221,5 +221,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void btnUnitConverterClick(View view) {
+
+        final Intent intent =new Intent(this, UnitConverterActivity.class);
+
+        startActivity(intent);
     }
 }

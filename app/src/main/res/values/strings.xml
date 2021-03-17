@@ -43,5 +43,11 @@
     <string name="btnSquareText" translatable="false">x<sup><small>2</small></sup></string>
     <string name="btnPowerText" translatable="false">x<sup><small>y</small></sup></string>
 
-    <string name="btnUnitConverterText" >Unit Converter</string>
+    <string name="btnUnitConverterText">Unit Converter</string>
+    <string name="btnCurrency">Currency</string>
+    <string name="btnLength">Length</string>
+    <string name="btnArea">Area</string>
+    <string name="btnVolume">Volume</string>
+    <string name="btnTemperature">Temperature</string>
+    <string name="btnTime">Time</string>
 </resources>
