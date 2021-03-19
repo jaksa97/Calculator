@@ -44,10 +44,15 @@
     <string name="btnPowerText" translatable="false">x<sup><small>y</small></sup></string>
 
     <string name="btnUnitConverterText">Unit Converter</string>
-    <string name="btnCurrency">Currency</string>
-    <string name="btnLength">Length</string>
-    <string name="btnArea">Area</string>
-    <string name="btnVolume">Volume</string>
-    <string name="btnTemperature">Temperature</string>
-    <string name="btnTime">Time</string>
+    <string name="btnCurrencyText">Currency</string>
+    <string name="btnLengthText">Length</string>
+    <string name="btnAreaText">Area</string>
+    <string name="btnVolumeText">Volume</string>
+    <string name="btnTemperatureText">Temperature</string>
+    <string name="btnWeightText">Weight</string>
+    <string name="currencyConverterText">Currency converter</string>
+    <string name="btnConvert">Convert</string>
+    <string name="amountToConvert">Amount to convert</string>
+    <string name="convertToText">Convert To:</string>
+    <string name="convertFromText">Convert From:</string>
 </resources>

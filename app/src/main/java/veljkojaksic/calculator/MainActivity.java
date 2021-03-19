@@ -41,7 +41,11 @@ public class MainActivity extends AppCompatActivity {
         previousCalculation = findViewById(R.id.previousCalculationView);
         display = findViewById(R.id.displayEditText);
 
-        display.setEnabled(false);
+        //display.setEnabled(false);
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            display.setShowSoftInputOnFocus(false);
+        }
 
         if (savedInstanceState != null)
         {

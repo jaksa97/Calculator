@@ -44,7 +44,8 @@
             android:layout_marginRight="5dp"
             android:textSize="25sp"
             android:background="@drawable/button_background"
-            android:text="@string/btnCurrency"
+            android:text="@string/btnCurrencyText"
+            android:onClick="btnCurrencyConverterClick"
             app:layout_constraintEnd_toStartOf="@+id/guideline"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -58,7 +59,7 @@
             android:layout_marginRight="10dp"
             android:textSize="25sp"
             android:background="@drawable/button_background"
-            android:text="@string/btnLength"
+            android:text="@string/btnLengthText"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/guideline"
             app:layout_constraintTop_toTopOf="parent" />
@@ -72,7 +73,7 @@
             android:layout_marginRight="5dp"
             android:textSize="25sp"
             android:background="@drawable/button_background"
-            android:text="@string/btnArea"
+            android:text="@string/btnAreaText"
             app:layout_constraintEnd_toStartOf="@+id/guideline"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/btnCurrencyConverter" />
@@ -86,7 +87,7 @@
             android:layout_marginRight="10dp"
             android:textSize="25sp"
             android:background="@drawable/button_background"
-            android:text="@string/btnVolume"
+            android:text="@string/btnVolumeText"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/guideline"
             app:layout_constraintTop_toBottomOf="@id/btnLengthConverter" />
@@ -100,13 +101,13 @@
             android:layout_marginRight="5dp"
             android:textSize="25sp"
             android:background="@drawable/button_background"
-            android:text="@string/btnTemperature"
+            android:text="@string/btnTemperatureText"
             app:layout_constraintEnd_toStartOf="@+id/guideline"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/btnAreaConverter" />
 
         <Button
-            android:id="@+id/btnTimeConverter"
+            android:id="@+id/btnWeightConverter"
             android:layout_width="0dp"
             android:layout_height="80dp"
             android:layout_marginLeft="10dp"
@@ -114,7 +115,7 @@
             android:layout_marginRight="10dp"
             android:textSize="25sp"
             android:background="@drawable/button_background"
-            android:text="@string/btnTime"
+            android:text="@string/btnWeightText"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/guideline"
             app:layout_constraintTop_toBottomOf="@id/btnVolumeConverter" />

@@ -4,10 +4,15 @@
     <string name="displayHint">Унесите једначину</string>
 
     <string name="btnUnitConverterText" >Претварач јединица</string>
-    <string name="btnLength">Дужина</string>
-    <string name="btnArea">Површина</string>
-    <string name="btnVolume">Запремина</string>
-    <string name="btnTemperature">Температура</string>
-    <string name="btnTime">Време</string>
-    <string name="btnCurrency">Валуте</string>
+    <string name="btnLengthText">Дужина</string>
+    <string name="btnAreaText">Површина</string>
+    <string name="btnVolumeText">Запремина</string>
+    <string name="btnTemperatureText">Температура</string>
+    <string name="btnWeightText">Тежина</string>
+    <string name="btnCurrencyText">Валуте</string>
+    <string name="currencyConverterText">Претварач валута</string>
+    <string name="btnConvert">Претвори</string>
+    <string name="amountToConvert">Количина за претварање</string>
+    <string name="convertToText">Претвори у:</string>
+    <string name="convertFromText">Претвори из:</string>
 </resources>
