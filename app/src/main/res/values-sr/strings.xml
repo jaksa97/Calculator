@@ -15,4 +15,9 @@
     <string name="amountToConvert">Количина за претварање</string>
     <string name="convertToText">Претвори у:</string>
     <string name="convertFromText">Претвори из:</string>
+    <string name="areaConverter">Претварач површине</string>
+    <string name="volumeConverter">Претварач запремине</string>
+    <string name="lengthConverter">Претварач дужине</string>
+    <string name="weightConverter">Претварач тежине</string>
+    <string name="temperatureConverter">Претварач температуре</string>
 </resources>

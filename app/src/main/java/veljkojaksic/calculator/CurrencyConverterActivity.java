@@ -46,7 +46,7 @@ public class CurrencyConverterActivity extends AppCompatActivity {
         convertTo.setSelection(1);
     }
 
-    public void btnConvertClick(View view) {
+    public void btnConvertCurrencyClick(View view) {
         RetrofitInterface retrofitInterface = RetrofitBuilder.getRetrofitInstance().create(RetrofitInterface.class);
         Call<JsonObject> exchange = retrofitInterface.getExchangeCurrency(convertFrom.getSelectedItem().toString());
 

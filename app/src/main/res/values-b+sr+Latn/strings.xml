@@ -15,4 +15,9 @@
     <string name="convertToText">Pretvori u:</string>
     <string name="convertFromText">Pretvori iz:</string>
     <string name="currencyConverterText">Pretvarač valuta</string>
+    <string name="areaConverter">Pretvarač površine</string>
+    <string name="volumeConverter">Pretvarač zapremine</string>
+    <string name="lengthConverter">Pretvarač dužine</string>
+    <string name="weightConverter">Pretvarač težine</string>
+    <string name="temperatureConverter">Pretvarač temperature</string>
 </resources>

@@ -55,4 +55,10 @@
     <string name="amountToConvert">Amount to convert</string>
     <string name="convertToText">Convert To:</string>
     <string name="convertFromText">Convert From:</string>
+
+    <string name="areaConverter">Area Converter</string>
+    <string name="volumeConverter">Volume Converter</string>
+    <string name="lengthConverter">Length Converter</string>
+    <string name="weightConverter">Weight Converter</string>
+    <string name="temperatureConverter">Temperature Converter</string>
 </resources>

@@ -21,9 +21,6 @@ public class MainActivity extends AppCompatActivity {
     private TextView previousCalculation;
     private EditText display;
 
-    public static final String KEY_Previous_Calculation = "Previous_Calculation";
-
-
     public MainActivity() {
     }
 
@@ -49,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
 
         if (savedInstanceState != null)
         {
-            final String previousCalculationString = savedInstanceState.getString(KEY_Previous_Calculation);
+            final String previousCalculationString = savedInstanceState.getString(C.name.KEY_Previous_Calculation);
             if (previousCalculationString != null)
             {
                 previousCalculation.setText(previousCalculationString);
@@ -62,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
     {
         if (previousCalculation!=null)
         {
-            outState.putString(KEY_Previous_Calculation, previousCalculation.getText().toString());
+            outState.putString(C.name.KEY_Previous_Calculation, previousCalculation.getText().toString());
         }
         super.onSaveInstanceState(outState);
     }

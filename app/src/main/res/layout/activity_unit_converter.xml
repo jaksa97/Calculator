@@ -59,6 +59,7 @@
             android:textSize="25sp"
             android:background="@drawable/button_background"
             android:text="@string/btnLengthText"
+            android:onClick="btnLengthConverterClick"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/guideline"
             app:layout_constraintTop_toTopOf="parent" />
@@ -73,6 +74,7 @@
             android:textSize="20sp"
             android:background="@drawable/button_background"
             android:text="@string/btnAreaText"
+            android:onClick="btnAreaConverterClick"
             app:layout_constraintEnd_toStartOf="@+id/guideline"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/btnCurrencyConverter" />
@@ -87,6 +89,7 @@
             android:textSize="20sp"
             android:background="@drawable/button_background"
             android:text="@string/btnVolumeText"
+            android:onClick="btnVolumeConverterClick"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/guideline"
             app:layout_constraintTop_toBottomOf="@id/btnLengthConverter" />
@@ -101,6 +104,7 @@
             android:textSize="18sp"
             android:background="@drawable/button_background"
             android:text="@string/btnTemperatureText"
+            android:onClick="btnTemperatureConverterClick"
             app:layout_constraintEnd_toStartOf="@+id/guideline"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/btnAreaConverter" />
@@ -115,6 +119,7 @@
             android:textSize="25sp"
             android:background="@drawable/button_background"
             android:text="@string/btnWeightText"
+            android:onClick="btnWeightConverterClick"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/guideline"
             app:layout_constraintTop_toBottomOf="@id/btnVolumeConverter" />
