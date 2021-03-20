@@ -23,6 +23,9 @@ public class ConverterActivity extends AppCompatActivity {
     EditText amountToConvert;
     TextView convertResult;
 
+    String title;
+    String temperatureTextResource;
+
     HashMap<String, Double> map = new HashMap<>();
 
     @Override
@@ -49,7 +52,10 @@ public class ConverterActivity extends AppCompatActivity {
         convertTo.setAdapter(adapter);
         convertTo.setSelection(1);
 
-        if (converterTitle.getText().toString() != getString(R.string.temperatureConverter))
+        title = converterTitle.getText().toString();
+        temperatureTextResource = getString(R.string.temperatureConverter);
+
+        if (!title.equals(temperatureTextResource))
         {
             map = (HashMap<String, Double>) intent.getSerializableExtra(C.name.KEY_Convert_Map);
         }
@@ -57,12 +63,8 @@ public class ConverterActivity extends AppCompatActivity {
 
     public void btnConvertClick(View view) {
 
-        String tempTitle = converterTitle.getText().toString();
-        String tempRes = getString(R.string.temperatureConverter);
-
-        if(tempTitle != tempRes)
+        if(!title.equals(temperatureTextResource))
         {
-            //Log.i("title",tempTitle + " -> " + tempRes);
             Double from = map.get(convertFrom.getSelectedItem().toString());
             Double to = map.get(convertTo.getSelectedItem().toString());
 
@@ -83,7 +85,7 @@ public class ConverterActivity extends AppCompatActivity {
     }
 
     private void exchangeTemperature(String from, String to, double amount) {
-        if(from == to)
+        if(from.equals(to))
         {
             convertResult.setText(String.valueOf(amount));
         }
